@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+
+  <style>
+
+    input{
+      border: 0.2rem solid black;
+      padding: 0.2rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+    }
+    #order-form{
+      font-size: 2rem;
+      color: red;
+    }
+
+      #confirm{
+        /* margin-left: 2rem; */
+      cursor: pointer;
+      font-size: 1.5rem;
+      background-color: teal;
+      border:  0.1rem solid teal;
+      color: white;
+      border-radius: 0.5rem;  
+      margin-top: 1rem;
+      padding: 0.3rem;
+      }
+      #confirm:hover{
+    background-color: black;
+    border:  0.1rem solid black; 
+}
+  </style>
+
+
+  <body>
+    <div id="order-form">
+      <!--Add your form html element here-->
+      <!--In form, give #name,#number and #address as HTML id's to relevant input elements -->
+      <!-- confirm button with id "confirm" -->
+
+      Name : <input type="text" id="name">
+      Number : <input type="number" id="number">
+      Addres :<input type="text" id="address">
+      <button id="confirm" onclick="showAlert()">Confirm</button>
+
+    </div>
+  </body>
+</html>
+<script src="/scripts/checkout.js"></script>
